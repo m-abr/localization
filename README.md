@@ -18,3 +18,13 @@ Distributed by FCPortugal under GNU GPLv3
 * Vector3f.h - 3D vector class with basic vector operations
 * Matrix4D.h - 4D matrix class with basic matrix operations
 * RobovizLogger - log utility to draw shapes and annotations in RoboViz (https://github.com/magmaOffenburg/RoboViz)
+
+## Running
+
+```c++
+LocalizerV2 loc;
+loc.run();
+auto m = loc.headTofieldTransform;
+
+//m contains the head to field transformation matrix
+```
