@@ -17,9 +17,10 @@ Distributed by FCPortugal under GNU GPLv3
 * Singleton.h - Singleton class
 * Vector3f.h - 3D vector class with basic vector operations
 * Matrix4D.h - 4D matrix class with basic matrix operations
+* Globals.h - defines the agent namespace to access agent and ball properties
 * RobovizLogger.h - log utility to draw shapes and annotations in RoboViz (https://github.com/magmaOffenburg/RoboViz)
 
-## Running
+## Usage
 
 ```c++
 LocalizerV2 loc;
