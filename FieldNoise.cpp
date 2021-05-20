@@ -1,6 +1,5 @@
 #include "FieldNoise.h"
 #include "iostream"
-#include <chrono>
 
 double FieldNoise::log_prob_r(double d, double r){
     double c1 = 100.0 * ((r-0.005)/d - 1);
@@ -58,7 +57,6 @@ double FieldNoise::log_prob_normal_distribution(double mean, double std, double 
     //Otherwise use erf_aux(x)
     //At this point, erf1_x and erf2_x have the same sign and are both distant from 0
 
-    auto t1 = std::chrono::high_resolution_clock::now();
     double erf1 = erf_aux(erf1_x);
     double erf2 = erf_aux(erf2_x);
 
