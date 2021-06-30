@@ -778,8 +778,8 @@ bool LocalizerV2::fine_tune_aux(float &initial_angle, float &initial_x, float &i
 	gsl_multimin_fminimizer_free (s);
 
 	if(!use_probabilities){
-		if(best_map_error > 0.06){
-			status = FAILtune;
+		if(best_map_error > 0.10){
+			stats_change_state(FAILtune);
 			return false;
 		}else{
 			initial_angle = best_ang;
